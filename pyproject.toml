@@ -1,0 +1,21 @@
+[project]
+name = "youtube-comment-reader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "BushraHussain", email = "usamausman2@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "google-api-python-client>=2.161.0",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+youtube-comment-reader = "youtube_comment_reader.reader:main"
+youtube-all-comment-reader = "youtube_comment_reader.read_all:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
